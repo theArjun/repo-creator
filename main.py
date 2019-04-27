@@ -1,7 +1,7 @@
 # Importing webdriver
 from selenium import webdriver
 # Options for headless mode in this context
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 # Exceptions
 from selenium.common.exceptions import NoSuchElementException, WebDriverException
 # Hides password while
@@ -9,16 +9,31 @@ import getpass
 # For copying link to clipboard
 import pyperclip
 
+
+print(r"""
+                                                                                       $$\                         
+                                                                                       $$ |                        
+ $$$$$$\   $$$$$$\   $$$$$$\   $$$$$$\         $$$$$$$\  $$$$$$\   $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+$$  __$$\ $$  __$$\ $$  __$$\ $$  __$$\       $$  _____|$$  __$$\ $$  __$$\  \____$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+$$ |  \__|$$$$$$$$ |$$ /  $$ |$$ /  $$ |      $$ /      $$ |  \__|$$$$$$$$ | $$$$$$$ | $$ |    $$ /  $$ |$$ |  \__|
+$$ |      $$   ____|$$ |  $$ |$$ |  $$ |      $$ |      $$ |      $$   ____|$$  __$$ | $$ |$$\ $$ |  $$ |$$ |      
+$$ |      \$$$$$$$\ $$$$$$$  |\$$$$$$  |      \$$$$$$$\ $$ |      \$$$$$$$\ \$$$$$$$ | \$$$$  |\$$$$$$  |$$ |      
+\__|       \_______|$$  ____/  \______/        \_______|\__|       \_______| \_______|  \____/  \______/ \__|      
+                    $$ |                                                                                           
+                    $$ |                                                                                           
+                    \__|                                                                                                                                                                                     
+""")
+
 # For opening browser in headless mode
 options = Options()
 options.headless = True
 
 try:
     browser = webdriver.Chrome(
-        options=options, executable_path="../driver/chromedriver.exe")
+        options=options, executable_path="C:/selenium/chromedriver.exe")
 except WebDriverException:
     browser = webdriver.Firefox(
-        options=options, executable_path="../driver/geckodriver.exe")
+        options=options, executable_path="C:/selenium/geckodriver.exe")
 
 # Not needed while opening in headless mode.
 # browser.maximize_window()
@@ -30,7 +45,7 @@ try:
     username = browser.find_element_by_name("login")
     password = browser.find_element_by_name("password")
     sign_in = browser.find_element_by_name("commit")
-    sign_in.is_displayed()
+    
 
     uname = input("Enter username/email : ").rstrip()
     username.send_keys(uname)
@@ -44,7 +59,7 @@ try:
         browser.get("https://github.com/new")
 
         # Repository Name
-        repo_name = input("\nEnter repository name : ")
+        repo_name = input("\nEnter repository name (you want to create) : ")
         browser.find_element_by_id("repository_name").send_keys(repo_name)
 
         # Repository Description
