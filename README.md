@@ -9,6 +9,8 @@ It uses **Selenium web driver**, headless browser and other dependencies to exec
  - It is fast and efficient in comparision to create repository opening the browser.
  
 
+ ![Sample Video](https://i.ibb.co/yX0ftds/cut.gif)
+
 ### Using Instructions
 
 - Have Latest chrome or Firefox browser on your system.
