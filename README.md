@@ -2,7 +2,7 @@
 
 ![Logo](https://i.ibb.co/vdmfZxK/console-repo-creator.png)
 
-Console Repo Creatorallows to create github repository using console (**Command Prompt / Linux Terminal**). <br/>
+Console Repo Creator allows to create github repository using console (**Command Prompt / Linux Terminal**). <br/>
 It uses **Selenium web driver**, headless browser and other dependencies to execute.  
 
 ## Why to use **Console Repo Creator** ?
@@ -52,11 +52,3 @@ And, we're working to develop :
 3. Optimizing speed.
 
 Copyright : Logo downloaded from [here](https://www.iconfinder.com/icons/344124/code_github_repository_social_icon). Shoutout to [Divjot Singh](https://www.iconfinder.com/Frank_Martin)
-
-
-
-
-
-
-
-
