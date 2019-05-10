@@ -18,11 +18,11 @@ It uses **Selenium web driver**, headless browser and other dependencies to exec
 - Install ```selenium``` webdriver for automating the process.  
 For installing selenium web driver using pip package manager :
 
-#### On UNIX based Systems
+#### Installing Selenium Module
 
         pip install selenium
 
-#### On Windows
+#### or
 
         python -m pip install selenium
 
