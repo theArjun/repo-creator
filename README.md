@@ -5,7 +5,7 @@
 Repo Creator allows to create github repository using console (**Command Prompt / Linux Terminal**). <br/>
 It uses **Selenium web driver**, headless browser and other dependencies to execute.  
 
-## Why to use ** Repo Creator** ?
+## Why to use **Repo Creator** ?
  - It is fast and efficient in comparision to create repository opening the browser.
  
 
