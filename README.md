@@ -20,19 +20,26 @@ For installing selenium web driver using pip package manager :
 
 #### Installing Selenium Module
 
-        pip install selenium
+```
+pip install selenium
+```
 
 #### or
 
-        python -m pip install selenium
+```
+python -m pip install selenium
+```
 
 #### Download Repository
 
-        git clone https://github.com/thearjun/repo-creator.git
+```
+git clone https://github.com/thearjun/repo-creator.git
+```
 
 #### Run script
-
-        python main.py
+```
+python main.py
+```
 
 ### Contributions
 
